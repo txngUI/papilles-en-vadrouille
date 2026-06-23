@@ -1,0 +1,56 @@
+# ============================================================
+#  PAPILLES — .gitignore racine du monorepo
+# ============================================================
+
+# ─── Système ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+
+# ─── Variables d'environnement (NE JAMAIS COMMITER) ─────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================================
+#  SPRING BOOT — papilles-api
+# ============================================================
+
+papilles-api/target/
+papilles-api/*.jar
+papilles-api/*.war
+papilles-api/.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+papilles-api/logs/
+papilles-api/*.log
+
+# ============================================================
+#  ANGULAR — papilles-web
+# ============================================================
+
+papilles-web/node_modules/
+papilles-web/dist/
+papilles-web/.angular/
+papilles-web/.angular/cache/
+
+# ============================================================
+#  DOCKER
+# ============================================================
+
+# Données persistantes PostgreSQL (volumne local)
+docker/postgres-data/
+
