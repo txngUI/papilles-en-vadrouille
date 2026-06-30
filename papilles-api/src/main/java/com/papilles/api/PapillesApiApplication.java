@@ -1,4 +1,4 @@
-package com.papilles.papilles_api;
+package com.papilles.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
